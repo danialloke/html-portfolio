@@ -1,40 +1,180 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Danial's Portfolio</title>
-    </head>
-    <body>
-        <h1>Danial's Portfolio</h1>
-        <h2>I'm a Web Developer</h2>
-        <hr/>
-        
-        <a href="./public/movie-ranking.html"><h2>Movie Ranking Project</h2></a>
-        <img src="./assets/images/movie-ranking.png" alt="Movie Ranking" height="300" width="400">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danial's Resume</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-        <a href="./public/birthday-invite.html"><h2>Birthday Invite Project</h2></a>
+  <body>
+    <div class="box">
+      <header>
+        <div class="header">
+          <h1>Danial's Resume</h1>
+          <p class="center">
+            LinkedIn: <a href="https://www.linkedin.com/">linkedin.com</a>
+          </p>
+        </div>
+      </header>
 
-        <img src="./assets/images/birthday-invite.png" alt="Purple Birthday Cake" height="260" wdith="80"/>
-        <hr/>
+      <hr />
 
-        <a href="./public/about.html" ><h3 style="display: inline">About Me</h3></a>
-        <a href="./public/contact.html" ><h3 style="display: inline">Contact Me</h3></a>
-        
-    </body>
+      <section class="summary">
+        <div class="container">
+          <h2>Summary</h2>
+          <br />
+          <p>
+            My background in fintech sparked a deep interest in programming and
+            technology. Despite having no prior experience in programming, my
+            passion for it has led me to pursue extensive self-education in web
+            development. I am currently thriving as a full-stack developer at
+            TCS, where I am grateful for the opportunity to learn and grow,
+            despite lacking a background in web development before joining. I am
+            committed to continuing my hard work and aim to excel further in
+            this field. This is my first project using html (and a little css)!
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="education">
+        <div class="container">
+          <h2>Education</h2>
+          <br />
+          <ul class="outer-list">
+            <!-- nest the list in div so that can retain the bullet point -->
+            <div class="left-list">
+              <li>Singapore University of Social Sciences</li>
+            </div>
+            <li class="right-list">08/2019 - 08/2023</li>
+
+            <ul class="inner-list">
+              <li>
+                Bachelor of Science (Hons) in Marketing with Minor in Financial
+                Technology
+              </li>
+            </ul>
+
+            <!-- nest the list in div so that can retain the bullet point -->
+            <div class="left-list">
+              <li>Singapore Polytechnic</li>
+            </div>
+            <li class="right-list">04/2014 - 04/2017</li>
+
+            <ul class="inner-list">
+              <li>Diploma in Banking and Finance</li>
+            </ul>
+          </ul>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="work-experience">
+        <div class="container">
+          <h2>Work Experience</h2>
+          <br />
+          <ul class="outer-list">
+            <!-- nest the list in div so that can retain the bullet point -->
+            <div class="left-list">
+              <li>Tata Consultancy Services</li>
+            </div>
+            <li class="right-list">12/2023 - Present</li>
+
+            <li class="intro">
+              Tata Consultancy Services (TCS) is a multinational information
+              technology (IT) services, consulting and business solutions
+              company headquartered in Mumbai, India.
+            </li>
+            <li class="role">Full Stack Developer (Java)</li>
+            <ul class="inner-list">
+              <li>
+                Completed an intensive two-month classroom training program
+                focused on Full Stack Development, acquiring proficiency in a
+                wide range of technologies including HTML, CSS, JavaScript,
+                Java, SQL, JDBC, JSP, Servlets, Spring and Spring Boot.
+              </li>
+              <li>
+                Contributed to a full-stack web development project within a
+                public sector unit, leveraging a Java-based tech stack. Played a
+                key role in the design and implementation of the project,
+                utilising technologies such as Backbone.js, HTML, CSS, Java,
+                JDBC and Spring Boot to deliver robust and scalable solutions.
+              </li>
+              <li>
+                Demonstrated strong time management skills by effectively
+                balancing self-learning initiatives with project
+                responsibilities. Proactively pursued continuous learning
+                opportunities to stay updated with industry trends and emerging
+                technologies while consistently delivering high-quality work
+                within project timelines.
+              </li>
+            </ul>
+
+            <!-- nest the list in div so that can retain the bullet point -->
+            <div class="left-list">
+              <li class="singtel">Singtel</li>
+            </div>
+            <li class="right-list">01/2022 - 08/2022</li>
+
+            <li class="intro">
+              Singtel is the largest mobile network operator in Singapore and
+              one of the four major telcos operating in the country.
+            </li>
+            <li class="role">
+              People Experience Intern (Employer Branding and Internal
+              Communications)
+            </li>
+            <ul class="inner-list">
+              <li>
+                Supported the management of Singtel's social media presence on
+                platforms such as LinkedIn, Facebook, Instagram and Glassdoor,
+                curating engaging and relevant content to attract and engage
+                potential candidates.
+              </li>
+              <li>
+                Supported the coordination and creation of visual materials such
+                as infographics, presentations and videos to enhance the
+                effectiveness of internal communication campaigns.
+              </li>
+              <li>
+                Monitored and analysed the impact of internal communication
+                initiatives, gathering feedback and insights to continuously
+                improve communication strategies.
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <br />
+
+          <ul class="outer-list">
+            <li>
+              IT Skills:
+              <span class="normal-weight"
+                >Java, JDBC, SQL, HTML, CSS, JavaScript, Python (Numpy, Pandas,
+                scikit-learn)</span
+              >
+            </li>
+            <li>
+              Language Skills:
+              <span class="normal-weight">Able to converse fluent English</span>
+            </li>
+            <li>
+              Soft Skills:
+              <span class="normal-weight">Leadership, Teamwork</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
